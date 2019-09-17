@@ -50,4 +50,9 @@ Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynami
 
 Description: 
 
-Pneumothorax is a disease in which the lung collapses. Due to this, people suffer from shortness in breath. Pneumothorax can occur due to variety of reasons such as lung disease
+Pneumothorax is a disease in which the lung collapses. It occurs when air enters beetween chest wall and lungs resulting in increased pressure over lungs and making it collapse. It can be caused due to blunt chest injury, or damage from lungs disease. The symptoms of this disease is chest pain and shortness of breath. Severe condition of of pneumothorax can be life-threatening.
+
+The goal of the project is to recognise the condition of patient, classify and segment the disease by giving an input of chest X-ray. The AI algorithm will distinguish between pneumothorax x-ray images and normal lung images. It will also segment out the portion with the affected disease. Currently, the radiologists manually scans the images to determine the presence of disease. Our goal is to create a software that helps the radiologists to scan multiple images at an higher pace and it can also help the patient to check the same for themselves.
+
+Technology Stack:
+ReactJS, Python, FastAI, Pytorch, Cloud based server(IBM Cloud/ AWS)
