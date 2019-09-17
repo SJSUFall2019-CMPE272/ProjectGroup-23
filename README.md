@@ -21,7 +21,9 @@ changes to improve the health of the people of the  city.
 Technology stack:
 Python, MongoDB/OracleDB, Docker/Kubernetes, ReactJS,
 
+
 2)Project Title - Smart Meter
+
 Project Idea Description:- 
 a. Electricity Utility Providers are faced with the challenge of meeting up with the demands of consumers throughout the day. Most importantly, the demands that occur during the peak hours of the day. Since, electricity cannot be stored in bulk, these utility providers daily face the challenge of reducing the gap between supply & demand of electricity units in those peak hours.
 
@@ -41,5 +43,3 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 Technology Stack (Tentative):-
 
 Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming, Node, React ,AWS (EC2, ECS) , Docker, Database (MongoDB/Cockroach DB)
-
-
