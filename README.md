@@ -1,4 +1,10 @@
 # ProjectGroup-23
+Team Members:
+1) Aditya Mantri
+2) Nachiket Trivedi
+3) Nishant Jani
+4) Sarthak Jain
+
 1)Project Title: USA's city based health analytics
 
 Description: We have a lot of new health issues emerging in the current
