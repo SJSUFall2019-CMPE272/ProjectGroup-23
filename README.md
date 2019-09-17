@@ -22,6 +22,7 @@ Technology stack:
 Python, MongoDB/OracleDB, Docker/Kubernetes, ReactJS,
 
 
+
 2)Project Title - Smart Meter
 
 Project Idea Description:- 
