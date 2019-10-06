@@ -24,6 +24,9 @@ Goal of the Project:-
 
 The goal of the project would be to reduce the peak hours load of consumers by shifting the load during non-peak hours by providing them with incentives. Thus we would want to reduce the Peak-to-Average-Ratio (PAR) of a consumer's load profile so that it can be flattened as much as possible. Thus reducing the peak demands would directly benefit the utility providers in meeting the demands of all consumers without looking for options of building new generation systems and bigger storage units thus incurring huge additional investment. Consumers would also be directly benefitted by this model with savings in their monthly electricity bills and a satisfaction of saving of environment with their minimal efforts. 
 
+Architecture:
+
+![Architecture-Diagram](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/CMPE%20272.jpeg)
 
 Technology Stack (Tentative):-
 
