@@ -5,31 +5,8 @@ Team Members:
 3) Nishant Jani
 4) Sarthak Jain
 
-1)Project Title: USA's city based health analytics
 
-Description: We have a lot of new health issues emerging in the current
-world like those which we have never faced before and we are still unable
-to decide upon what causes these diseases. Our project would help identify
-the diseases along with all the factors causing it like: bad air quality of the city,
-unclean water, garbage congestion etc. We have a dataset of 500 cities in the USA
-along with the number of people in that city which are affected by a particular
-disease. So we have count for the number of people suffering from a particular disease
-in a particular state. Then we also have data for various diseases and their symptoms or causes.
-So then we can train the system to perform computations over the given data and
-provide the user with the analytics regarding what all factors in that particular city 
-are leading to causing a particular disease.
-
-Goal:
-This analytics can be then submitted to city health department which can then identify
-the causes for the bad health of the people living there and then correspondingly make
-changes to improve the health of the people of the  city.
-
-Technology stack:
-Python, MongoDB/OracleDB, Docker/Kubernetes, ReactJS,
-
-
-
-2)Project Title - Smart Meter
+Project Title - Smart Meter
 
 Project Idea Description:- 
 
@@ -50,15 +27,3 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 Technology Stack (Tentative):-
 
 Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming, Node, React ,AWS (EC2, ECS) , Docker, Database (MongoDB/Cockroach DB)
-
-
-3) Project Title: Identification of Pneumothorax from Chest X-Ray Images
-
-Description: 
-
-Pneumothorax is a disease in which the lung collapses. It occurs when air enters beetween chest wall and lungs resulting in increased pressure over lungs and making it collapse. It can be caused due to blunt chest injury, or damage from lungs disease. The symptoms of this disease is chest pain and shortness of breath. Severe condition of of pneumothorax can be life-threatening.
-
-The goal of the project is to recognise the condition of patient, classify and segment the disease by giving an input of chest X-ray. The AI algorithm will distinguish between pneumothorax x-ray images and normal lung images. It will also segment out the portion with the affected disease. Currently, the radiologists manually scans the images to determine the presence of disease. Our goal is to create a software that helps the radiologists to scan multiple images at an higher pace and it can also help the patient to check the same for themselves.
-
-Technology Stack:
-ReactJS, Python, FastAI, Pytorch, Cloud based server(IBM Cloud/ AWS)
