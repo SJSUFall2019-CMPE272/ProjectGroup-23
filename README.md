@@ -8,15 +8,11 @@
 
 # Abstract
 
-a. Electricity Utility Providers are faced with the challenge of meeting up with the demands of consumers throughout the day. Most importantly, the demands that occur during the peak hours of the day. Since, electricity cannot be stored in bulk, these utility providers daily face the challenge of reducing the gap between supply & demand of electricity units in those peak hours.
-
-b. Inspired by the above issue, we hope to build a Model that can work to reduce the load demands during the peak hours of the day by subtly shifting the demands to non-peak hours, while taking into consideration factors such as customer satisfaction, maximum supply limit of utility, monetary costs, etc. 
-
-c. The core of the idea is development of a Load Scheduling Model that can optimally meet the demands of both the consumers & the utility providers. To enable the full potential, we hope to monitor & schedule appliances of household via our model by making use of IoT. 
-
-d. Along with shifting of loads to non-peak hours, model would also take into consideration the overall cost reduced in user's electricity bill along with the comfortability level of the user with the proposed schedule.
-
-e. The idea holds scope for implementation of the Model for an entire community of households with One Master metering unit communicating with each household's individual smart meter for reducing the load during peak hours for an entire community. 
+- Electricity Utility Providers are faced with the challenge of meeting up with the demands of consumers throughout the day. Most importantly, the demands that occur during the peak hours of the day. Since, electricity cannot be stored in bulk, these utility providers daily face the challenge of reducing the gap between supply & demand of electricity units in those peak hours.
+- Inspired by the above issue, we hope to build a Model that can work to reduce the load demands during the peak hours of the day by subtly shifting the demands to non-peak hours, while taking into consideration factors such as customer satisfaction, maximum supply limit of utility, monetary costs, etc. 
+- The core of the idea is development of a Load Scheduling Model that can optimally meet the demands of both the consumers & the utility providers. To enable the full potential, we hope to monitor & schedule appliances of household via our model by making use of IoT. 
+- Along with shifting of loads to non-peak hours, model would also take into consideration the overall cost reduced in user's electricity bill along with the comfortability level of the user with the proposed schedule.
+- The idea holds scope for implementation of the Model for an entire community of households with One Master metering unit communicating with each household's individual smart meter for reducing the load during peak hours for an entire community. 
 
 # Goal of the Project
 
