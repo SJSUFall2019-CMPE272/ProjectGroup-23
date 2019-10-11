@@ -1,7 +1,7 @@
 # ProjectGroup-23
 Team Members:
 1) Aditya Mantri
-2) Nachiket Trivedi
+2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
 3) Nishant Jani
 4) Sarthak Jain
 
