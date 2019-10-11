@@ -23,13 +23,13 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 - Server side: Node, Express, 
 - Pipeline: Kafka(pipeline and filter data)
 - Database: MySQL, MongoDB, Cockroach DB
-- CLoud: AWS(EC2, ECS), Docker, IBM Bluemix
-- Algortihmic implementation(including ML): Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
+- Cloud: AWS(EC2, ECS), Docker, IBM Bluemix
+- Algortihmic implementation: Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
 
 
 
 # Team Members
 1) [Aditya Mantri](http://github.com/aditya-edu)
 2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
-3) [Nishant Jani]
+3) [Nishant Jani](https://github.com/NishantKJani)
 4) [Sarthak Jain](https://github.com/sarthakjain27)
