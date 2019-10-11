@@ -1,11 +1,5 @@
 # Smart Meter
-Load scheduling done easy
-
-# Team Members
-1) [Aditya Mantri](http://github.com/aditya-edu)
-2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
-3) [Nishant Jani]
-4) [Sarthak Jain](https://github.com/sarthakjain27)
+Load Scheduling Done Easy
 
 # Abstract
 
@@ -25,4 +19,17 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 
 # Technology Stack (Tentative)
 
-Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming, Node, React ,AWS (EC2, ECS) , Docker, Database (MongoDB/Cockroach DB), IBM Bluemix
+- Client side: React, Redux
+- Server side: Node, Express, 
+- Pipeline: Kafka(pipeline and filter data)
+- Database: MySQL, MongoDB, Cockroach DB
+- Hosting: AWS(EC2, ECS), Docker
+- Algortihm implementation: Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
+
+
+
+# Team Members
+1) [Aditya Mantri](http://github.com/aditya-edu)
+2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
+3) [Nishant Jani]
+4) [Sarthak Jain](https://github.com/sarthakjain27)
