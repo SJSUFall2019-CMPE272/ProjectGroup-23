@@ -1,10 +1,10 @@
 # Smart Meter
 
 # Team Members
-1) [Aditya Mantri] (http://github.com/aditya-edu)
+1) [Aditya Mantri](http://github.com/aditya-edu)
 2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
 3) [Nishant Jani]
-4) [Sarthak Jain] (https://github.com/sarthakjain27)
+4) [Sarthak Jain](https://github.com/sarthakjain27)
 
 # Abstract
 
