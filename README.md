@@ -23,8 +23,8 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 - Server side: Node, Express, 
 - Pipeline: Kafka(pipeline and filter data)
 - Database: MySQL, MongoDB, Cockroach DB
-- Hosting: AWS(EC2, ECS), Docker
-- Algortihm implementation: Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
+- CLoud: AWS(EC2, ECS), Docker, IBM Bluemix
+- Algortihmic implementation(including ML): Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
 
 
 
