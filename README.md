@@ -1,4 +1,5 @@
 # Smart Meter
+Load scheduling done easy
 
 # Team Members
 1) [Aditya Mantri](http://github.com/aditya-edu)
