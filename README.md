@@ -26,6 +26,23 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 - Cloud: AWS(EC2, ECS), Docker, IBM Bluemix
 - Algortihmic implementation: Evolutionary Algorithms (Genetic Algorithm, Particle Swarm Optimization), Dynamic Programming
 
+# Utility Company (PG&E's opinion)
+
+We had an interaction with one of the PG&E representative over the phone where we told him about our project. To start with, he was impressed that we were thinking of doing something in this area. We took their feedback on the project which included the following major points:
+
+  - Smart Meter would be more beneficial when it covers large number of households.
+  - PG&E people are not worried if the load demand peak is shifted during night hours. During day time, they have to meet the demands of industries, farmers, IT sector in addition to consumer households.
+  - Much of the day time is reduced at night and only household play a major role during night hours.
+  - It would be more effective if we could incorporate installed solar energy at user households in our load scheduling alogrithm.
+  
+# Customer's Opinion
+
+As of now, we have surveyed two households regarding the installation of smart meter in their households. The household consisted both working parents with two school going children. Their common feedback is as follows:
+
+  - Machines these days such as dishwasher, washing machine, cloth dryer are already coming with a feature to manually schedule the appliance which the households regularly use.
+  - It would be beneficial if we could provide each household with an analysis of how much their usage was for the day and which appliance consume how much units.
+  - The time of manual scheduling of appliances is a decision done manually. If a better scheduling which could provide less electricity rate would be appreciated.
+  - One of the household had installed solar panels and thus wanted to know if our system would be incorporating the solary energy. 
 
 
 # Team Members
