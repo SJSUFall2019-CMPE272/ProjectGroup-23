@@ -1,5 +1,5 @@
 # Smart Meter
-Load Scheduling Done Easy
+Appliance Scheduling Made Easy
 
 # Abstract
 
