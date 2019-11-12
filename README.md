@@ -45,6 +45,16 @@ As of now, we have surveyed two households regarding the installation of smart m
   - One of the household had installed solar panels and thus wanted to know if our system would be incorporating the solary energy. 
 
 
+# User Persona
+
+This application will help home owners in load scheduling of appliances during off-peak hours of the day. The application will try to run the load during hours where the cost of usage will be less. At the same time, when the application is extended to an entire community, it would directly help the utility companies to better plan out and provide with a cheaper rate to users due to the load being shifted to off-peak hours of the day. So, this system could potentially help both the residential customers and the utility companies.
+
+
+# Hill Statement
+
+Users who want to reduce their electricity bill by willing to shift their operating hours of appliances. Also, when implemented on a large scale, it would also benefit by flattening the load profile of the users and thus helping utility companies to reduce the electricity prices and do-away with ToU pricing.
+
+
 # Team Members
 1) [Aditya Mantri](http://github.com/aditya-edu)
 2) [Nachiket Trivedi](https://github.com/nachiket-trivedi)
