@@ -52,7 +52,7 @@ This application will help home owners in load scheduling of appliances during o
 
 # Hill Statement
 
-Users who want to reduce their electricity bill by willing to shift their operating hours of appliances. Also, when implemented on a large scale, it would also benefit by flattening the load profile of the users and thus helping utility companies to reduce the electricity prices and do-away with ToU pricing.
+Users who want to reduce their electricity bill by willing to shift their operating hours of appliances. Also, when implemented on a large scale, it would also flatten the load profile of the users by reducing the PAR of an average customer's load profile and thus there won't be a spike in load during peak hours thus helping the utility companies to provide consumers with a cheaper rate plan. 
 
 
 # Team Members
