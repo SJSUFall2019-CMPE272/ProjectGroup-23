@@ -31,10 +31,14 @@ const port=process.env.PORT || 5000;
 
 
 const postRoutes=require('./routes/post');
+const userRoutes=require('./routes/user');
 const registerRoutes=require('./routes/register');
 
+
 app.use('/posts',postRoutes);
+app.use('/user',userRoutes);
 app.use('/register',registerRoutes);
+
 
 app.listen(port,()=>{
 	console.log("Listening on "+port);
