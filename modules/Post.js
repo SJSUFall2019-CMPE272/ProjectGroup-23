@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+// Schema for storing login credentials
+
 
 const PostSchema = mongoose.Schema({
 	'uname':{
