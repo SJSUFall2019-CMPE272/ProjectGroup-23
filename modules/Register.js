@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-
+// Defining the structure of how the data 
+// will be stored in the mongodb
 const PostSchema = mongoose.Schema({
 	'uname':{
 		type:String
