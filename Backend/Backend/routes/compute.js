@@ -54,4 +54,20 @@ router.post('/getZipCodes', function (req, res) {
             }
         });
 });
+
+router.post('/getAllSchedule', function (req, res) {
+
+    console.log("Inside getAllSchedule Post Request");
+    console.log("Req Body : ", req.body);
+    
+    kafka.make_request('getAllSchedule', req.body, function (error, result) {
+        
+            if (error) {
+                res.status(200).send("getAllSchedule query error", error);
+            }
+            else {
+                    res.status(200).send(result);
+            }
+        });
+});
 module.exports = router;
