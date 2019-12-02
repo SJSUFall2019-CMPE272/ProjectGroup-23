@@ -5,6 +5,7 @@ var StoreResults= require('./services/StoreResults')
 var SignInUser= require('./services/SignInUser')
 var GetApplianceCosts= require('./services/GetApplianceCosts')
 var GetZipCodes= require('./services/GetZipCodes')
+var GetAllSchedule= require('./services/GetAllSchedule')
 var Database=require('./models/schema');
 
 function handleTopicRequest(topic_name,fname){
@@ -44,5 +45,6 @@ handleTopicRequest("signInUser",SignInUser)
 handleTopicRequest("storeResults",StoreResults)
 handleTopicRequest("getApplianceCosts", GetApplianceCosts)
 handleTopicRequest("getZipCodes",GetZipCodes)
+handleTopicRequest("getAllSchedule",GetAllSchedule)
 
 
