@@ -87,7 +87,8 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         console.log('the axios call data',data);
 
         axios.defaults.withCredentials = false;//very imp, sets credentials so that backend can load cookies
-        axios.post("http://173.193.105.226:31031/schedule", data)
+        // axios.post("http://173.193.105.226:31031/schedule", data)
+        axios.post("http://10.0.0.174:8000/schedule", data)
         .then(response => {
           console.log('resp',response.data)
             this.setState({});   
@@ -145,7 +146,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         scheduleCard=<div>
       <Card className="schCard">
         <CardBody>
-          <CardTitle><h3>Schedule</h3></CardTitle>
+          <CardTitle><h3>Schedule ({JSON.parse(localStorage.getItem('computationResults'))['computedDate']})</h3></CardTitle>
             {CardDets}
         </CardBody>
       </Card>

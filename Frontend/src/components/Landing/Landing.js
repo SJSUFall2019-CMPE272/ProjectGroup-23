@@ -16,18 +16,12 @@ import FooterPage from './Footer'
   const items = [
     {
       src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
-      altText: 'Slide 1',
-      caption: 'Slide 1'
     },
     {
       src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
-      altText: 'Slide 2',
-      caption: 'Slide 2'
     },
     {
       src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
-      altText: 'Slide 3',
-      caption: 'Slide 3'
     }
   ];
   
