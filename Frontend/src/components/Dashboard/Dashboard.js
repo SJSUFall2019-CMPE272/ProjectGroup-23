@@ -31,7 +31,7 @@ import ApplianceCostDoughNut from './ApplianceCostDoughnut'
 import NavBarLoggedIn from '../Navbar/NavBarLoggedIn';
 import '../Dashboard/Dashboard.css';
 
-let scheduleCard=null, costToPayCard=null, hourlyInfoCard=null, respData=null;
+let scheduleCard=null, costToPayCard=null, hourlyInfoCard=null, respData=null, doughnutClass=null;
 let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false, signupModalFlag=false, dashboardFlag=false, goToShopFlag=false, goToPastFlag=false;
   class Dashboard extends React.Component{
 
@@ -105,8 +105,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         axios.post(hostedAddress+":3001/compute/storeResults", data1)
         .then(response => {
           console.log('aditya ka response',response.data)
-          localStorage.setItem('allSchedulesArray',JSON.stringify(response.data['allSchedule']))
-            // this.setState({});   
+          localStorage.setItem('allSchedulesArray',JSON.stringify(response.data['allSchedule']))  
         })
         .catch(res=>{
             alert('Invalid');
@@ -146,7 +145,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         scheduleCard=<div>
       <Card className="schCard">
         <CardBody>
-          <CardTitle><h3>Schedule</h3></CardTitle>
+          <CardTitle><h3>Schedule ({JSON.parse(localStorage.getItem('computationResults'))['computedDate']})</h3></CardTitle>
             {CardDets}
         </CardBody>
       </Card>
@@ -170,8 +169,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
     }
       render()
       {
-        console.log('computationResults-->',JSON.parse(localStorage.getItem('computationResults')))
-        // alert('new')
+          console.log('in render of dashboard')
           if(!localStorage.getItem('email'))
             redirectVar=<Redirect to="/start"/> 
           else if(goToShopFlag)
@@ -184,6 +182,8 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
               redirectVar=<Redirect to="/pastSchedules"/>;
               goToPastFlag=false;
             }
+            if(localStorage.getItem('computationResults')!=null)
+              doughnutClass=<ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
           return(
             <div className="">
               {redirectVar}
@@ -197,12 +197,9 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
                 <Button className="starterButton" color="primary" onClick={this.goToShop}>Get Starter Kit</Button>
                 </Container>
           </Jumbotron>
-          {/*
-            <div>
-                <ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
-            </div>
-          */
-          }
+          <div>
+              {doughnutClass}
+          </div>
           <div className="scheduleCard">          
             {scheduleCard}
           </div>

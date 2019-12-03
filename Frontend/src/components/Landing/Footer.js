@@ -8,71 +8,45 @@ const FooterPage= () => {
         <MDBRow>
           <MDBCol md="6">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Footer Content
+              Smart Meter
             </h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+            SmartMeter Project is an initiative towards a greener environment by motivating users to schedule appliances to off-peak hours thus providing electricity savings and a promise of a healthier future. The project is implemented under the guidance of Professor Rakesh Ranjan
             </p>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              Application
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="/home">Home</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
+                <a href="/start">Schedule</a>
               </li>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              About
             </h5>
             <ul className="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
+            <li>
+                <a href="/about">Contact Us</a>
               </li>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              Shop
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
+                <a href="/shop">Starter Kit</a>
               </li>
             </ul>
           </MDBCol>
@@ -82,11 +56,11 @@ const FooterPage= () => {
       <div className="text-center py-3">
         <ul className="list-unstyled list-inline mb-0">
           <li className="list-inline-item">
-            <h5 className="mb-1">Register for free</h5>
+            <h5 className="mb-1">Schedule your devices!</h5>
           </li>
           <li className="list-inline-item">
-            <a href="#!" className="btn btn-danger btn-rounded">
-              Sign up!
+            <a href="/start" className="btn btn-danger btn-rounded">
+              Get started
             </a>
           </li>
         </ul>
@@ -123,7 +97,7 @@ const FooterPage= () => {
       </div>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright | <a href="https://www.MDBootstrap.com"> SmartMeter</a>
+          &copy; {new Date().getFullYear()} Copyright | <a href="/"> SmartMeter</a>
         </MDBContainer>
       </div>
     </MDBFooter>

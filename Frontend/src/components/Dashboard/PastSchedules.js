@@ -45,6 +45,7 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
         if(allSchedules!=undefined || allSchedules!=null)
         scheduleCards=allSchedules.map((element)=>{
         let arr=[]
+        let computedDate=element['computedDate']
         for(let item in element['schedule'])
             {
             console.log(item)
@@ -72,7 +73,7 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
             <div>
             <Card className="schCard1">
                 <CardBody>
-                  <CardTitle><h3>Schedule</h3></CardTitle>
+                  <CardTitle><h3>{computedDate}</h3></CardTitle>
                       {CardDets}
                       <span className='leftCardText'>Total Schedule Cost</span><span className='hideText'>.</span><span className='rightCardText'>{element['new cost']}</span>
                       <br />
@@ -112,7 +113,7 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
                 <div className="jumbotronDiv">
                 <Jumbotron className="jumbotronDiv" fluid>
                 <Container fluid className="">
-                <h1 className="header display-3">Past</h1>
+                <h1 className="header display-3">Past Schedules</h1>
                 <h6 className="header"></h6>
                 </Container>
                 </Jumbotron>
