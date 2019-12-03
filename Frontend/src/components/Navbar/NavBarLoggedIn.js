@@ -64,7 +64,7 @@ class NavBarLoggedIn extends React.Component {
               <NavLink href="/shop">Shop</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About Us</NavLink>
+              <NavLink href="/about">Contact Us</NavLink>
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

@@ -16,6 +16,7 @@ import {
     Card, CardBody, CardTitle, CardImg, CardSubtitle, CardText
   } from 'reactstrap';
 
+
 import axios from 'axios';
 import {hostedAddress} from '../../GlobalVar'
 import {tempResponse} from '../../GlobalVar'
@@ -43,14 +44,15 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
           return(
             <div className="">
                 {navbar}
-                <div className="jumbotronDiv">
-                <Jumbotron className="jumbotronDiv" fluid>
-                <Container fluid className="">
-                <h1 className="header display-3">Shop</h1>
-                <h6 className="header"></h6>
-                </Container>
-                </Jumbotron>
-            </div>
+                
+                  <div className="jumbotronDiv">
+                    <Jumbotron className="jumbotronDiv" fluid>
+                    <Container fluid className="">
+                    <h1 className="header display-3">Shop</h1>
+                    <h6 className="header"></h6>
+                    </Container>
+                    </Jumbotron>
+                  </div>
             </div>
           )
       }

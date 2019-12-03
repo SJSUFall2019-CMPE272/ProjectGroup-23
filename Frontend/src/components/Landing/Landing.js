@@ -16,13 +16,13 @@ import GoogleApiWrapper from './UsersLocation'
 
   const items = [
     {
-      src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
+      src: 'https://images.unsplash.com/photo-1540912795404-ab2ba3137e3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1333&q=80',
     },
     {
-      src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
+      src: 'https://images.unsplash.com/photo-1487875961445-47a00398c267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     },
     {
-      src: 'https://i2.wp.com/bestlifeonline.com/wp-content/uploads/2018/06/corgi-with-its-tongue-out.jpg?resize=1200%2C798&ssl=1',
+      src: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80',
     }
   ];
   
