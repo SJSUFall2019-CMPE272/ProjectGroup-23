@@ -1,5 +1,6 @@
 import React from 'react';
 import {Doughnut} from 'react-chartjs-2';
+import '../Dashboard/Dashboard.css';
 
 class ApplianceCostDoughNut extends React.Component{
     constructor(props)
@@ -13,8 +14,11 @@ class ApplianceCostDoughNut extends React.Component{
     {
         //let scheduleInfo=JSON.parse(localStorage.getItem('scheduleInfo'))
         console.log('Will Mount ApplianceCostDoughnut',this.props.scheduleInfo)
-        let appInfo=this.props.scheduleInfo['appliance info']
+        let appInfo
+        if(this.props.scheduleInfo!=null)
+            appInfo=this.props.scheduleInfo['appliance info']
         let appNames=[],appCosts=[],bc=[]
+        if(appInfo!=null)
         for(let appliance in appInfo)
         {
             appNames.push(appliance)
@@ -36,7 +40,7 @@ class ApplianceCostDoughNut extends React.Component{
     render(){
         return(
             <div>
-                <h2>Appliance Cost Distribution</h2>
+                <div className="doughnutText"><h4>Appliance Cost Distribution</h4></div>
                 <Doughnut data={this.state.data} 
                         width={100}
                         height={20}
