@@ -2,6 +2,7 @@ import React from 'react'
 import {Doughnut} from 'react-chartjs-2';
 import axios from 'axios';
 import {hostedAddress} from '../../GlobalVar'
+import Savings from './Savings'
 import './Reports.css'
 import {
     Carousel,
@@ -79,8 +80,8 @@ class ReportComponent extends React.Component{
                 <Doughnut data={this.state.data} 
                         width={100}
                         height={45}
-                        options={{ maintainAspectRatio: true }}
-                />
+                        options={{ maintainAspectRatio: true }}/>
+                
             </div>
             </div>
         )
