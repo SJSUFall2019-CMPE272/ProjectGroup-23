@@ -50,6 +50,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         super(props);
         this.state={isHourCardOpen:false}
         let cardDetails=JSON.parse(localStorage.getItem('cardData'));
+        if(cardDetails!=null)
         for(let item of cardDetails)
         {
           let prefTime=item['prefTime']
@@ -117,6 +118,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
 
         console.log('sch-',schedule);
         let arr=[];
+        if(schedule!=null)
         for(let item in schedule)
         {
           console.log(item)

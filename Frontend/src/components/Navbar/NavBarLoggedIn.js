@@ -26,6 +26,10 @@ class NavBarLoggedIn extends React.Component {
   toggle = () => this.setState({isOpen:!this.state.isOpen});
   logoutHandler=()=>{
     localStorage.removeItem('email');
+    localStorage.removeItem('allSchedulesArray');
+    localStorage.removeItem('scheduleInfo');
+    localStorage.removeItem('computationResults');
+
     // localStorage.removeItem('fname');
     this.setState({});
   }

@@ -6,7 +6,9 @@ import {
 import '../Dashboard/Dashboard.css';
 
 const appInfoCards = (props) => {
-let appInfo=JSON.parse(localStorage.getItem('computationResults'))['appliance info']
+  let appInfo
+  if(JSON.parse(localStorage.getItem('computationResults'))!=null)
+    appInfo=JSON.parse(localStorage.getItem('computationResults'))['appliance info']
 let cards=null
 let appNameArr=[]
 let appliCardText=null

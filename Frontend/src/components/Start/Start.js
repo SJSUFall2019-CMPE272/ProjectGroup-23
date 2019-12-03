@@ -35,6 +35,15 @@ let redirectVar=null, loginModalFlag=false,modalLogin=false, modalSignup=false,s
     constructor(props){
       super(props);
       this.state={email:"",password:""};
+      loginModalFlag=false
+      modalLogin=false
+      modalSignup=false
+      signupModalFlag=false
+      dashboardFlag=false
+      navLoader=null
+      goToShopFlag=false
+      redirectVarShop=null
+      redirectVar=null
     }
     goToShop=()=>{
       goToShopFlag=true;
@@ -141,7 +150,7 @@ let redirectVar=null, loginModalFlag=false,modalLogin=false, modalSignup=false,s
                 <FormGroup row>
                   <Label for="exampleEmail2" sm={2}>Password</Label>
                   <Col sm={10}>
-                    <Input type="email" name="email" id="exampleEmail2" placeholder="password" onChange={this.passwordHandler.bind(this)}/>
+                    <Input type="password" name="email" id="exampleEmail2" placeholder="password" onChange={this.passwordHandler.bind(this)}/>
                   </Col>
                   
                 </FormGroup>
