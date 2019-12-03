@@ -6,6 +6,7 @@ const Post=require('../modules/Post');
 //Login details
 
 //Get all posts //URL localhost:5000/posts
+// Getting all data of each of the users
 router.get('/',(req,res,next)=>{
 	Post.find()
 		.then((posts)=>{
@@ -16,6 +17,7 @@ router.get('/',(req,res,next)=>{
 
 
 //Add new post //URL localhost:5000/posts/add
+// Adding the new user details into the system
 router.post('/add',(req,res,next)=>{
 	const un=req.body.uname;
 	const pass=req.body.password;
@@ -34,6 +36,7 @@ router.post('/add',(req,res,next)=>{
 });
 
 //Update a post
+// For performing update for a particular user based on the ID
 router.put('/update/:id',(req,res,next)=>{
 
 	let id1=req.params.id;
@@ -57,6 +60,7 @@ router.put('/update/:id',(req,res,next)=>{
 });
 
 //Delete
+// Removing data of a particular user based on ID
 router.delete('/:id',(req,res,next)=>{
 	let id=req.params.id;
 
