@@ -12,19 +12,19 @@ class Savings extends React.Component{
             data:{}
         }
     }
-    componentWillMount(){
+    componentDidMount(){
         let data={email:localStorage.getItem('email')}
         axios.post(hostedAddress+':3001/compute/getTotalCost',data).
         then((response)=>{
             let bc=[]
-            for(let each in response.data['applianceName'])
+            for(let each in response.data['a'])
             {
                 let c= "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
                 bc.push(c)
             }
             this.setState({
                 data:{
-                    labels:response.data['applianceName'],
+                    labels:response.data['a'],
                     datasets:[{
                         data:response.data['total'],
                         backgroundColor:bc,
@@ -43,8 +43,6 @@ class Savings extends React.Component{
                         height={45}
                         options={{ maintainAspectRatio: true }}
                 />
-                <hr />
-                <Savings />
             </div>
         )
     }

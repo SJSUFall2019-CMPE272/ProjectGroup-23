@@ -75,14 +75,16 @@ class ReportComponent extends React.Component{
             </Jumbotron>
         </div>
         </div>
-            <div>
-            <h2>Total Appliance Costs</h2>
-                <Doughnut data={this.state.data} 
-                        width={100}
-                        height={45}
-                        options={{ maintainAspectRatio: true }}/>
-                
-            </div>
+                <div>
+                <h2>Total Appliance Costs</h2>
+                    <Doughnut data={this.state.data} 
+                            width={100}
+                            height={45}
+                            options={{ maintainAspectRatio: true }}/>
+                </div>
+                <div>
+                    <Savings />
+                </div>
             </div>
         )
     }
