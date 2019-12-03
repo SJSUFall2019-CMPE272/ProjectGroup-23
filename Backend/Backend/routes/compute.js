@@ -70,4 +70,20 @@ router.post('/getAllSchedule', function (req, res) {
             }
         });
 });
+
+router.post('/getTotalCost', function (req, res) {
+
+    console.log("Inside getTotalCost Post Request");
+    console.log("Req Body : ", req.body);
+    
+    kafka.make_request('getTotalCost', req.body, function (error, result) {
+        
+            if (error) {
+                res.status(200).send("getTotalCost query error", error);
+            }
+            else {
+                    res.status(200).send(result);
+            }
+        });
+});
 module.exports = router;
