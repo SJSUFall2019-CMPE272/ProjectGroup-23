@@ -98,7 +98,7 @@ render(){
   <FormGroup row>
     <Label for="exampleEmail2" sm={2}>Password</Label>
     <Col sm={10}>
-      <Input type="email" name="email" id="exampleEmail2" placeholder="password" onChange={this.passwordHandler.bind(this)}/>
+      <Input type="password" name="email" id="exampleEmail2" placeholder="password" onChange={this.passwordHandler.bind(this)}/>
     </Col>
   </FormGroup>
   <a href="#" onClick={this.loadSignup}>Don't have an account? Signup</a>

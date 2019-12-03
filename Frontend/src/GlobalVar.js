@@ -1,4 +1,4 @@
-export const hostedAddress="http://localhost";
+export const hostedAddress="http://10.0.0.174";
 // export const hostedAddress="http://localhost";
 export const tempResponse={
     "appliance info": {

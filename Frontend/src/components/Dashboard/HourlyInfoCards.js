@@ -6,7 +6,9 @@ import {
 import '../Dashboard/Dashboard.css';
 
 const HourlyInfoCards = (props) => {
-let hourlyInfo=JSON.parse(localStorage.getItem('computationResults'))['hourly info']
+  let hourlyInfo
+  if(JSON.parse(localStorage.getItem('computationResults'))!=null)
+ hourlyInfo=JSON.parse(localStorage.getItem('computationResults'))['hourly info']
 let cards=null
 let timeArr=[]
 let appliCardText=null

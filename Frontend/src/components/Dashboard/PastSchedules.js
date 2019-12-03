@@ -33,8 +33,16 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
   class PastSchedules extends React.Component{
     constructor(props){
         super(props);
-        let allSchedules=JSON.parse(localStorage.getItem('allSchedulesArray'))
+        let data={email:localStorage.getItem('email')}
+        console.log('data',data)
+        axios.defaults.withCredentials = true;//very imp
+        axios.post(hostedAddress+":3001/compute/getAllSchedule", data)
+        .then(response => {   
+        console.log('response.data',response.data)
+        let allSchedules=response.data['allSchedule'].reverse()
+
         console.log('allSchedules',allSchedules)
+        if(allSchedules!=undefined || allSchedules!=null)
         scheduleCards=allSchedules.map((element)=>{
         let arr=[]
         for(let item in element['schedule'])
@@ -73,6 +81,11 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
             </Card>
             </div>
         )
+        })
+        this.setState({})
+        })
+        .catch((err)=>{
+          console.log('err',err)
         })
     }
     openDetails=(e)=>{
