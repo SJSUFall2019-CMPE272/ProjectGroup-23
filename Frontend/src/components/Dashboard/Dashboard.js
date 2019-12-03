@@ -24,6 +24,7 @@ import React, { useState } from 'react';
 import {Redirect} from 'react-router';
 import HourlyInfoCollapser from './HourlyInfoCollapser';
 import ApplianceInfoCollapser from './ApplianceInfoCollapser';
+import ApplianceCostDoughNut from './ApplianceCostDoughnut'
 // import ModalAddApp from './ModalAddApp';
 // import ApplianceCards from './ApplianceCards';
 // import SolarPanelCollapser from './SolarPanelCollapser';
@@ -192,12 +193,16 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
                 <Button className="starterButton" color="primary" onClick={this.goToShop}>Get Starter Kit</Button>
                 </Container>
           </Jumbotron>
+          <div>
+              <ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
+          </div>
           <div className="scheduleCard">          
             {scheduleCard}
           </div>
             <div className="costToPayCard">          
               {costToPayCard}
             </div>
+            
             {/* <div className="hourlyInfoCollapser"> */}
             <div className="toggle1">
               <HourlyInfoCollapser/>
