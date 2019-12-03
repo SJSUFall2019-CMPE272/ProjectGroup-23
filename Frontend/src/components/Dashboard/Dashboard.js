@@ -138,7 +138,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
           else
             time=(time-12)+" PM"
           return(<CardText>
-            <span className='leftCardText'>{item[0]}</span><span className='hideText'>.</span><span className='rightCardText'>{time}</span>
+            <span className='leftCardText'>{item[0]}</span><span className='hideText'>.</span><span className='rightCardText'><b>{time}</b></span>
             </CardText>)
         })
 
@@ -155,9 +155,9 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
     <Card className="schCard">
     <CardBody>
       <CardTitle><h3>Cost</h3></CardTitle>
-<div>New ${newCost}  </div>
-<div>Old ${oldCost}  </div>
-<div>Savings ${profit}  </div>
+<div>New Cost You Pay: <b>${newCost}</b>  </div>
+<div>Old Cost You were Paying: <b>${oldCost}</b>  </div>
+<div>Total Savings: <b>${profit}</b>  </div>
     </CardBody>
   </Card></div>
   this.setState({})
