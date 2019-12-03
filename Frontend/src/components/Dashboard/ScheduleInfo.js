@@ -26,6 +26,7 @@ import {Redirect} from 'react-router';
 // import ApplianceCards from './ApplianceCards';
 import NavBarLoggedOut from '../Navbar/NavBarLoggedOut';
 import NavBarLoggedIn from '../Navbar/NavBarLoggedIn';
+import ApplianceCostDoughNut from './ApplianceCostDoughnut'
 import '../Dashboard/Dashboard.css';
 
 let scheduleCard=null,costToPayCard=null,hourlyInfoCard=null;
@@ -87,6 +88,7 @@ let navbar=null, redirectVar=null, loginModalFlag=false,modalLogin=false, modalS
                 <h6 className="header"></h6>
                 </Container>
                 </Jumbotron>
+                <ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('scheduleInfo'))}/>
                 <div className='allScheduleCards'>{cards}</div>
             </div>
             </div>
