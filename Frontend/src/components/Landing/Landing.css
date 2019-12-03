@@ -12,3 +12,18 @@
 .carouselItem > img {
     width:100%;
 }
+.mapDiv{
+    
+    width:95%;
+    padding-left:100px;
+    padding-top: 30px;
+}
+.location{
+    
+    bottom:50px
+}
+.footer{
+    float:left;
+    display:inline-block;
+    bottom:0px
+}

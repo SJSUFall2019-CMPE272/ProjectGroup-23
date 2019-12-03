@@ -88,10 +88,10 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         console.log('the axios call data',data);
 
         axios.defaults.withCredentials = false;//very imp, sets credentials so that backend can load cookies
-        axios.post("http://173.193.105.226:31031/schedule", data)
+        axios.post("http://localhost:8000/schedule", data)
         .then(response => {
           console.log('resp',response.data)
-            this.setState({});   
+            // this.setState({});   
             respData=response.data
             console.log(respData['schedule'])
             console.log('===>',respData)
@@ -106,7 +106,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         .then(response => {
           console.log('aditya ka response',response.data)
           localStorage.setItem('allSchedulesArray',JSON.stringify(response.data['allSchedule']))
-            this.setState({});   
+            // this.setState({});   
         })
         .catch(res=>{
             alert('Invalid');
@@ -170,6 +170,8 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
     }
       render()
       {
+        console.log('computationResults-->',JSON.parse(localStorage.getItem('computationResults')))
+        // alert('new')
           if(!localStorage.getItem('email'))
             redirectVar=<Redirect to="/start"/> 
           else if(goToShopFlag)
@@ -195,9 +197,12 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
                 <Button className="starterButton" color="primary" onClick={this.goToShop}>Get Starter Kit</Button>
                 </Container>
           </Jumbotron>
-          <div>
-              <ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
-          </div>
+          {/*
+            <div>
+                <ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
+            </div>
+          */
+          }
           <div className="scheduleCard">          
             {scheduleCard}
           </div>

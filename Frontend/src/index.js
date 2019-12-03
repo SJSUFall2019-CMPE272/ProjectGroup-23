@@ -12,6 +12,7 @@ import shop from './components/Kit/Shop';
 import about from './components/Start/About';
 import pastSchedules from './components/Dashboard/PastSchedules';
 import scheduleInfo from './components/Dashboard/ScheduleInfo';
+import reports from './components/Reports/Reports'
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -30,6 +31,7 @@ class Routes extends React.Component{
                     <Route exact path="/about" component={about}/>
                     <Route exact path="/pastSchedules" component={pastSchedules}/>
                     <Route exact path="/scheduleInfo" component={scheduleInfo}/>
+                    <Route exact path='/reports' component={reports}/>
                 </Switch>
             </Router>
         )

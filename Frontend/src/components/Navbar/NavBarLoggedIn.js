@@ -58,6 +58,9 @@ class NavBarLoggedIn extends React.Component {
               <NavLink href="/pastSchedules">Past Schedules</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/reports">Reports</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/shop">Shop</NavLink>
             </NavItem>
             <NavItem>

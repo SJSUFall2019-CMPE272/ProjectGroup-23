@@ -11,29 +11,30 @@ class ApplianceCostDoughNut extends React.Component{
     }
     componentWillMount()
     {
-        //let scheduleInfo=JSON.parse(localStorage.getItem('scheduleInfo'))
-        console.log('Will Mount ApplianceCostDoughnut',this.props.scheduleInfo)
-        let appInfo=this.props.scheduleInfo['appliance info']
-        let appNames=[],appCosts=[],bc=[]
-        for(let appliance in appInfo)
-        {
-            appNames.push(appliance)
-            appCosts.push(appInfo[appliance]['Cost Incurred'])
-            let c= "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
-            bc.push(c)
-        }
-        this.setState({
-            data:{
-                labels:appNames,
-                datasets:[{
-                    data:appCosts,
-                    backgroundColor:bc,
-                    hoverBackgroundColor:bc
-                }]
+        //  let scheduleInfo=JSON.parse(localStorage.getItem('scheduleInfo'))
+            let appInfo=this.props.scheduleInfo['appliance info']
+            console.log('Will Mount ApplianceCostDoughnut ==>',appInfo)
+            let appNames=[],appCosts=[],bc=[]
+            for(let appliance in appInfo)
+            {
+                appNames.push(appliance)
+                appCosts.push(appInfo[appliance]['Cost Incurred'])
+                let c= "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+                bc.push(c)
             }
-        })
+            this.setState({
+                data:{
+                    labels:appNames,
+                    datasets:[{
+                        data:appCosts,
+                        backgroundColor:bc,
+                        hoverBackgroundColor:bc
+                    }]
+                }
+            })    
     }
     render(){
+        
         return(
             <div>
                 <h2>Appliance Cost Distribution</h2>

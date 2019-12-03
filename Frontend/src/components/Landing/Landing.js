@@ -12,6 +12,7 @@ import {
   import React, { useState } from 'react';
   import {Redirect} from 'react-router';
 import FooterPage from './Footer'
+import GoogleApiWrapper from './UsersLocation'
 
   const items = [
     {
@@ -105,7 +106,18 @@ import FooterPage from './Footer'
                 <div className="carouselDiv">
                     <Example/>
                 </div>
-                <div>
+                <div className='location'>
+                  <GoogleApiWrapper />
+                </div>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>
+                <div className='footer'> 
                 <FooterPage/>
                 </div>
               </div>
