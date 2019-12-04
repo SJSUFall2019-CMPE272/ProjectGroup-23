@@ -1,5 +1,5 @@
-//export const hostedAddress="http://18.217.167.153";
-export const hostedAddress="http://localhost";
+export const hostedAddress="http://18.217.167.153";
+//export const hostedAddress="http://localhost";
 export const tempResponse={
     "appliance info": {
       "Cloth Dryer": {
