@@ -175,7 +175,8 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
   </Card></div>
   this.setState({})
         }).catch(res=>{
-            alert('ERROR IN CALL TO PSO');
+            //alert('ERROR IN CALL TO PSO');
+            console.log('ERROR IN CALL TO PSO')
         })
         
     }

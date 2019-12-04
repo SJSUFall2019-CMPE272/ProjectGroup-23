@@ -17,7 +17,7 @@ function handle_request(msg, callback) {
         address: msg.address,
         city: msg.city,
         state: msg.state,
-        zip: msg.zip,
+        zipCode: msg.zipCode,
         email: msg.email,
         password: msg.hash
     })

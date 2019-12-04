@@ -21,7 +21,7 @@ const FooterPage= () => {
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="/start">Schedule</a>

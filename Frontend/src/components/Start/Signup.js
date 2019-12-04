@@ -20,7 +20,6 @@ class Signup extends React.Component {
       city:"",
       state:"",
       address:"",
-      address2:"",
       zip:""
     };
     this.submitSignup = this.submitSignup.bind(this);
@@ -50,11 +49,6 @@ class Signup extends React.Component {
       address: e.target.value
     });
   };
-  address2ChangeHandler = e => {
-    this.setState({
-      address2: e.target.value
-    });
-  };
   cityChangeHandler = e => {
     this.setState({
       city: e.target.value
@@ -75,10 +69,10 @@ class Signup extends React.Component {
     const data = {
       email: this.state.email,
       password: this.state.password,
-      fname: this.state.fname,
-      lname: this.state.lname,
-      zipcode: this.state.zip,
-      address: this.state.address+this.state.address2,
+      firstName: this.state.fname,
+      lastName: this.state.lname,
+      zipCode: this.state.zip,
+      address: this.state.address, //*
       city:this.state.city,
       state:this.state.state
     };
@@ -89,11 +83,12 @@ class Signup extends React.Component {
         console.log("Status Code : ", response);
         if (response.status === 201 && response.data!="exists" && response.data!="error") {
           console.log("new user account created-", response.data);
-          localStorage.setItem('email',response.data.email);
-          localStorage.setItem('fname',response.data.fname);
+          localStorage.setItem('email',this.state.email);
+          localStorage.setItem('fname',this.state.fname);
           localStorage.setItem('bearer-token',response.headers.authorization)
           dashboardFlag=true;
-          this.setState({});
+          // this.setState({});
+          window.location.reload()
         } 
         else if(response.data=="exists")
         {
@@ -150,7 +145,7 @@ class Signup extends React.Component {
     </Row>
     <FormGroup>
       <Label for="exampleAddress">Address</Label>
-      <Input type="text" name="address" id="exampleAddress" placeholder="1234 Main St"onChange={this.address1ChangeHandler}/>
+      <Input type="text" name="address" id="exampleAddress" placeholder="1234 Main St"onChange={this.addressChangeHandler}/>
     </FormGroup>
     <Row form>
       <Col md={6}>
@@ -237,7 +232,7 @@ class signup extends React.Component {
     .then(response => {   
         console.log("Status Code : ", response);
         if (response.status === 200 && response.data!="exists" && response.data!="error") {
-          console.log("new customer created-");
+          console.log("new User Profile created-");
           // console.log(localStorage.getItem('new1'));
           localStorage.setItem('cookie',response.data['cookie']);
           localStorage.setItem('email',response.data['email']);
@@ -303,4 +298,4 @@ class signup extends React.Component {
   }
 }
 
-export default (signup);
+export default (Signup);
