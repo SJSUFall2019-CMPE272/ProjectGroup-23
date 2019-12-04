@@ -115,6 +115,7 @@ let redirectVar=null, loginModalFlag=false,modalLogin=false, modalSignup=false,s
           }
           if(dashboardFlag)
           {
+            localStorage.setItem('callPSO','true')
             redirectVar=<Redirect to='/dashboard'/>
             dashboardFlag=false;
           }

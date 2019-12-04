@@ -91,25 +91,38 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         axios.post("http://173.193.82.125:31502/schedule", data)
         .then(response => {
           console.log('resp',response.data)
-            // this.setState({});   
-            respData=response.data
-            console.log(respData['schedule'])
-            console.log('===>',respData)
-        localStorage.setItem('computationResults',JSON.stringify(respData))
-        //axios call to aditya, will give the 'response'
-        let data1={
-          psoResult:respData,
-          email:localStorage.getItem('email')
-        }
-        axios.defaults.withCredentials = true;//very imp, sets credentials so that backend can load cookies
-        axios.post(hostedAddress+":3001/compute/storeResults", data1)
-        .then(response => {
-          console.log('aditya ka response',response.data)
-          localStorage.setItem('allSchedulesArray',JSON.stringify(response.data['allSchedule']))  
-        })
-        .catch(res=>{
-            alert('Invalid');
-        })
+          // save new computation only if we come from compute
+          // finding if we come from compute is we localStorage's callPSO item is set to true
+          if(localStorage.getItem('callPSO')==='true')
+          {
+              console.log('Coming from Compute So saving new computation result')
+              // this.setState({});
+              respData=response.data
+              console.log(respData['schedule'])
+              console.log('===>',respData)
+              localStorage.setItem('computationResults',JSON.stringify(respData))
+              //axios call to aditya, will give the 'response'
+              let data1={
+                psoResult:respData,
+                email:localStorage.getItem('email')
+              }
+              axios.defaults.withCredentials = true;//very imp, sets credentials so that backend can load cookies
+              axios.post(hostedAddress+":3001/compute/storeResults", data1)
+              .then(response => {
+                console.log('aditya ka response',response.data)
+                localStorage.setItem('allSchedulesArray',JSON.stringify(response.data['allSchedule']))  
+              })
+              .catch(res=>{
+                  alert('UNABLE TO SAVE DATA INTO DB');
+              })
+              localStorage.setItem('callPSO','false')
+          }
+          else{
+            console.log('Not Coming from Compute So using previous computation result from local storage')
+              respData = JSON.parse(localStorage.getItem('computationResults'))
+          }
+          if(respData!=null)
+            doughnutClass=<ApplianceCostDoughNut scheduleInfo={respData}/>
         let schedule=respData['schedule'];
         let newCost=respData['new cost'];
         let oldCost=respData['old cost'];
@@ -161,9 +174,8 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
     </CardBody>
   </Card></div>
   this.setState({})
-        })
-        .catch(res=>{
-            alert('Invalid');
+        }).catch(res=>{
+            alert('ERROR IN CALL TO PSO');
         })
         
     }
@@ -182,8 +194,12 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
               redirectVar=<Redirect to="/pastSchedules"/>;
               goToPastFlag=false;
             }
-            if(localStorage.getItem('computationResults')!=null)
-              doughnutClass=<ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
+            {
+                /*
+                    if(localStorage.getItem('computationResults')!=null)
+                      doughnutClass=<ApplianceCostDoughNut scheduleInfo={JSON.parse(localStorage.getItem('computationResults'))}/>
+                */
+            }
           return(
             <div className="">
               {redirectVar}
