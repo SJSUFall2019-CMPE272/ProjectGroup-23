@@ -23,9 +23,10 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 
 ![IBM-Registry](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/Repositories%20on%20IBM%20Cloud.png)
 
-![IBM-Watson-Assistant-1](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/IBM%20Watson%20Assistant%20-%201%20.png)
 
-![IBM-Watson-Assistant-2](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/IBM%20Watson%20Assistant%20-%202.png)
+IBM-Watson-Assistant             |  IBM-Watson-Assistant
+:-------------------------:|:-------------------------:
+![IBM-Watson-Assistant-1](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/IBM%20Watson%20Assistant%20-%201%20.png)  |  ![IBM-Watson-Assistant-2](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/IBM%20Watson%20Assistant%20-%202.png)
 
 # Technology Stack (Tentative)
 
