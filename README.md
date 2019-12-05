@@ -1,5 +1,5 @@
 # Smart Meter
-Optimising Load Scheduling using nature inspired Particle Swarm Optimization with application hosted on IBM Cloud integrated with IBM Watson Assistant Chatbot.
+Optimising Load Scheduling using nature inspired Particle Swarm Optimization with application hosted on ***IBM Cloud integrated with IBM Watson Assistant Chatbot.***
 
 # Abstract
 
@@ -30,12 +30,12 @@ IBM-Watson-Assistant             |  IBM-Watson-Assistant
 
 # Technology Stack (Tentative)
 
-- Client side: React
-- Server side: Node, Express, 
-- Pipeline: Kafka(pipeline and filter data)
-- Database: MongoDB
-- Cloud: IBM Cloud, Docker, IBM Watson Assistant Chatbot, AWS(EC2 & ECS)
-- Algortihmic implementation: Particle Swarm Optimization
+- **Client side:** React
+- **Server side:** Node, Express, 
+- **Pipeline: Kafka(pipeline and filter data)**
+- **Database:** MongoDB
+- **Cloud: IBM Cloud, Docker, IBM Watson Assistant Chatbot, AWS(EC2 & ECS)**
+- **Algortihmic implementation:** Particle Swarm Optimization
 
 # Utility Company (PG&E's opinion)
 
