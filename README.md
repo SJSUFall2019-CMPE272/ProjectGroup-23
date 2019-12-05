@@ -1,5 +1,5 @@
 # Smart Meter
-Optimising Load Scheduling using nature inspired Particle Swarm Optimization with application hosted on ***IBM Cloud integrated with IBM Watson Assistant Chatbot. Demo URL: http://184.172.234.236:31842/***
+Optimising Load Scheduling using nature inspired Particle Swarm Optimization with application hosted on ***IBM Cloud integrated with IBM Watson Assistant Chatbot. The Demo URL for the project deployed on Kubernetes Service of IBM Cloud is: http://184.172.234.236:31842/***
 
 # Abstract
 
