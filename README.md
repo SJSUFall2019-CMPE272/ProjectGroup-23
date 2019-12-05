@@ -1,5 +1,5 @@
 # Smart Meter
-Appliance Scheduling Made Easy
+Optimising Load Scheduling using nature inspired Particle Swarm Optimization with the application hosted on IBM Cloud integrating IBM Watson Assistant Chatbot.
 
 # Abstract
 
