@@ -88,7 +88,7 @@ let redirectVar=null, loginModalFlag=false, modalLogin=false, modalSignup=false,
         console.log('the axios call data',data);
 
         axios.defaults.withCredentials = false;//very imp, sets credentials so that backend can load cookies
-        axios.post("http://173.193.82.125:31502/schedule", data)
+        axios.post("http://184.172.234.236:30601/schedule", data)
         .then(response => {
           console.log('resp',response.data)
           // save new computation only if we come from compute
