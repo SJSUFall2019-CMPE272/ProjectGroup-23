@@ -15,7 +15,7 @@ The goal of the project would be to reduce the peak hours load of consumers by s
 
 # Architecture
 
-![Architecture-Diagram](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/Project-Architecture.jpeg)
+![Architecture-Diagram](https://github.com/SJSUFall2019-CMPE272/Smart-Meter/blob/master/Project%20Architecture.jpeg)
 
 # Technology Stack (Tentative)
 
