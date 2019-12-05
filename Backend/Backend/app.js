@@ -17,11 +17,19 @@ var cors = require('cors');
 //use cors to allow cross origin resource sharing
 
 //app.use(cors({ origin: 'http://173.193.82.125:31680', credentials: true }));
+<<<<<<< HEAD
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
 //Allow Access Control
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+=======
+app.use(cors({ origin: 'http://184.172.234.236:31842', credentials: true }));
+
+//Allow Access Control
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', 'http://184.172.234.236:31842');
+>>>>>>> e7feec0084227042d7c7f04931f06ddcfc3c5359
     //res.setHeader('Access-Control-Allow-Origin', 'http://173.193.82.125:31680');
     res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
